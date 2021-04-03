@@ -9,17 +9,41 @@
     <link href="./assets/css/style.css" type="stylesheet">
 </head>
 
-<body>
-    <header>Quote Creator</header>
+<body> 
+    <nav class="navbar navbar-red bg-red">
+    <span class="navbar-brand mb-0 h1 w-100 text-left">Quote Creator</span>
+    </nav>
+    <div class="container">
+        <div class="row">
+        <div class="col-4 bg-light">
+        <p class="serach-header my-1">Serch Video</p>
+        <div class="input-group mb-3">
+            <input id="video-input" type="text" class="form-control" placeholder="Enter Artist" aria-label="Enter Artist">
+            <input id="video-input" type="text" class="form-control" placeholder="Enter Song" aria-label="Enter Song">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="search-button">
+                    Search
+                </button>
+            </div>
+        </div>
+        <button class="btn btn-primary mb-3" type="button" id="favorite-lyrics">Favorite-Lyrics</button>
+        <form id="favorite"></form>
+    </div>
+    <div class="col-8">
+        <div class="row mr-0">
+            <div class="col-12 border border-red m-3 rounded">
+                <div class="row">
+                    <div class="col-12">
+                        <span id="artist-name" class="artist-name align-middle"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <main>
-        <form action="input">
-            <input type="text">
-        </form>
-
+    </div>
         
-        
-    </main>
+    </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
 </body>
