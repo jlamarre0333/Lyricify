@@ -1,6 +1,6 @@
 # Project1
-HTML CSS and JS
+HTML CSS and JavaScript using multiple Third-Party API's
 
 
 
-:) Christina was here
+
