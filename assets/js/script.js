@@ -6,3 +6,9 @@ function getLyrics(artist, songname) {
 }
 
 getLyrics('Drake', "What's Next")
+
+// function youtubeSearch(){
+
+//     var key = 'AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw';
+//     var searchURL = 'https://www.googleapis.com/youtube/v3/search';
+// }
