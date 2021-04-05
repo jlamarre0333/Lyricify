@@ -5,23 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Creator</title>
-    <link href="./assets/css/style.css" type="stylesheet">
+    <title>Lyrify</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>Quote Creator</header>
+    <header>
+        <h1>Lyrify</h1>
+        <button type="button" id="favorite-lyricsBtn">
+            <a href="./favoriteLyrics.html">
+                Favorite Lyrics
+            </a>
+        </button>
+    </header>
 
     <main>
-        <form action="input">
-            <input type="text">
-        </form>
+        <p>Search Video</p>
 
-        
-        
+        <input id="artist-input" type="text" class="form-control" placeholder="Enter Artist" aria-label="Enter Artist">
+        <input id="song-input" type="text" class="form-control" placeholder="Enter Song" aria-label="Enter Song">
+        <button type="button" id="search-button">
+            Search
+        </button>
+
+
     </main>
+
+    <div>
+        <p id="lyrics">
+
+        </p>
+
+    </div>
 
     <script src="./assets/js/script.js"></script>
 </body>
 
-</html>
+</html
