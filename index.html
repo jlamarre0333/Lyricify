@@ -10,17 +10,27 @@
 </head>
 
 <body>
-    <header>Quote Creator</header>
+    <header>Lyrify</header>
 
     <main>
-        <form action="input">
-            <input type="text">
-        </form>
+        <p>Search Video</p>
 
-        
-        
+        <input id="artist-input" type="text" class="form-control" placeholder="Enter Artist" aria-label="Enter Artist">
+        <input id="song-input" type="text" class="form-control" placeholder="Enter Song" aria-label="Enter Song">
+        <button type="button" id="search-button">Search</button>
     </main>
 
+    <div id = "videoPlaceholder">
+        <iframe class= "ytPlayer" id="ytPlayer"></iframe>
+    </div>
+
+    <div>
+        <p id="lyrics"></p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="./assets/js/ytscript.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
