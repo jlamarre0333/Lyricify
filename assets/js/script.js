@@ -1,32 +1,34 @@
 const songInput = document.getElementById("song-input")
-const videoInput = document.getElementById("video-input")
+const artistInput = document.getElementById("artist-input")
+const lyricsDisplay = document.getElementById("lyrics")
+const submitSearch = document.getElementById("search-button")
 
 function getLyrics(artist, songname) {
     return fetch(`https://api.lyrics.ovh/v1/${artist}/${songname}`)
         .then(res => res.json())
         .then(data => data.lyrics)
-        // .then(lyrics => console.log(lyrics))
+        .then(lyrics => {
+            lyricsDisplay.textContent = lyrics;
+        })
 }
 
-var formSubmitHandler = function(event) {
+var formSubmitHandler = function (event) {
+ 
     // prevent page from refreshing
     event.preventDefault();
-  
+
     // get value from input element
-    // var songName = songInput.value.trim();
-  
+    const songName = songInput.value.trim();
+    const artistName = artistInput.value.trim();
+
     if (songName) {
-      getLyrics(songName);
-      document.appendChild("div")
-  
-      // clear old content
-    //   repoContainerEl.textContent = '';
-    //   nameInputEl.value = '';
+        getLyrics(artistName, songName);
+        
+
+        // clear old content
+        //   repoContainerEl.textContent = '';
+        //   nameInputEl.value = '';
     } else {
-      alert('Please enter a GitHub username');
+        alert('Invalid Search');
     }
-  };
-
-getLyrics('Drake', "What's Next")
-
-document.addEventListener('submit', formSubmitHandler )
+};
