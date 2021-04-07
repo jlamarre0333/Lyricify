@@ -1,9 +1,9 @@
- var artistEl = document.querySelector("#artist-input");
- var songEl = document.querySelector("#song-input");
- var buttonEl = document.querySelector("#search-button");
- var videoListEl = document.querySelector("#videoListPlaceholder");
+var artistEl = document.querySelector("#artist-input");
+var songEl = document.querySelector("#song-input");
+var buttonEl = document.querySelector("#search-button");
+var videoListEl = document.querySelector("#videoListPlaceholder");
  
- var getYoutubeVideos = function (artist, song) {
+var getYoutubeVideos = function (artist, song) {
     var search = artist + song;
     var addSearch = search.split(" ").join("+");
 
@@ -18,4 +18,10 @@
         });
 };
 
- getYoutubeVideos();
+var formSubmitHandler = function(event) {
+    event.preventDefault();
+    console.log(event);
+};
+
+
+buttonEl.addEventListener("submit", formSubmitHandler);
