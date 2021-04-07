@@ -1,17 +1,15 @@
  var getYoutubeVideos = function (search) {
     
-    // if the amount of words in the search is greater than an array of 0
-    if(search.length > 0){
-        // search word placeholder
-        var addSearch = "";
+    var addSearch = "";
 
-        for ( var i = 0, n = search.length + 1; i < n; i++){
-            // add each word
-            addSearch += search[i];
+    for ( var i = 0, n = search.length; i < n; i++){
+        // if theres a space, replace with +
+        if ( search[i] === "") {
+            search[i] = "+";
         }
-    }
-    else{
-        addSearch = search;
+
+        // add each letter
+        addSearch += search[i];
     }
 
     // grabbing whatever user searches
@@ -25,4 +23,4 @@
         });
 };
 
- getYoutubeVideos();
+ getYoutubeVideos("smiles baby");
