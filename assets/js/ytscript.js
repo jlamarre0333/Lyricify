@@ -1,25 +1,28 @@
-//     return fetch('https://www.googleapis.com/youtube/v3/search?part=snippet
-//     &forMine=true
-//     &q=Youtube+Data+API
-//     &order=viewCount
-//     &type=video
-//     &key=AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw
-//     ')
-// };
- // api key does not require user authorization
- // key = 'AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw';
- // searchURL = 'https://www.googleapis.com/youtube/v3/search';
+ var getYoutubeVideos = function (search) {
+    
+    // if the amount of words in the search is greater than an array of 0
+    if(search.length > 0){
+        // search word placeholder
+        var addSearch = "";
 
- var getYoutubeVideos = function () {
-    var response = fetch('https://www.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&key=AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw')
-        .then(function(response){
-            response.json()
-            
-            .then(function(data){
+        for ( var i = 0, n = search.length + 1; i < n; i++){
+            // add each word
+            addSearch += search[i];
+        }
+    }
+    else{
+        addSearch = search;
+    }
+
+    // grabbing whatever user searches
+    var apiURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + addSearch + "&order=viewCount&key=AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw";
+
+    // making a request to url
+    fetch(apiURL).then(function(response){
+            response.json().then(function(data){
                 console.log(data);
-            })
+            });
         });
-
 };
 
  getYoutubeVideos();
