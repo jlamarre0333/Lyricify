@@ -1,7 +1,7 @@
 :root{
-    --primary-color: #FF0000;
-    --secundary-color: #000000;
-    --tertiary-color:#ffff;
+    --primary-color: #dbe2ef;
+    --secundary-color: #112d4e;
+    --tertiary-color: #3f72af;
 }
 
 
@@ -32,7 +32,7 @@ header a {
 
 main p {
     font-weight: bold;
-    color: var(--secundary-color);
+    color: var(--primary-color);
 }
 
 .lyricsDisplay {
@@ -44,5 +44,9 @@ main p {
 }
 
 .button{
-    color: gray;
+    color: var(--secundary-color);
+}
+
+body {
+    background-color: var(--tertiary-color);
 }
