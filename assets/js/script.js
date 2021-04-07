@@ -13,7 +13,6 @@ function getLyrics(artist, songname) {
 }
 
 var formSubmitHandler = function (event) {
- 
     // prevent page from refreshing
     event.preventDefault();
 
@@ -31,4 +30,8 @@ var formSubmitHandler = function (event) {
     } else {
         alert('Invalid Search');
     }
+    
 };
+
+
+submitSearch.addEventListener('click', formSubmitHandler);
