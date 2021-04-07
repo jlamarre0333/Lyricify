@@ -23,5 +23,4 @@ var formSubmitHandler = function(event) {
     console.log(event);
 };
 
-
-buttonEl.addEventListener("submit", formSubmitHandler);
+buttonEl.addEventListener("click", formSubmitHandler);
