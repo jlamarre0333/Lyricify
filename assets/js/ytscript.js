@@ -11,7 +11,7 @@
  // searchURL = 'https://www.googleapis.com/youtube/v3/search';
 
  var getYoutubeVideos = function () {
-    var response = fetch('https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw')
+    var response = fetch('https://www.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&key=AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw')
         .then(function(response){
             response.json()
             
