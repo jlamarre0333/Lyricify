@@ -5,6 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lyrify - Home Page</title>
+    <link href="./assets/css/style.css" type="stylesheet">
+</head>
+
+<body>
+    <header>Lyrify</header>
+
+    <main>
+        <p>Search Video</p>
+
+        <input id="artist-input" type="text" class="form-control" placeholder="Enter Artist" aria-label="Enter Artist">
+        <input id="song-input" type="text" class="form-control" placeholder="Enter Song" aria-label="Enter Song">
+        <button id="search-button" type="button">Search</button>
+    </main>
+
+    <div id = "videosContainer"></div>
+
+    <div id = "lyricsContainer">
+        <p id="lyrics"></p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+=======
     <title>Lyrify</title>
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
@@ -38,7 +63,9 @@
 
     </div>
 
+
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/ytscript.js"></script>
 </body>
 
 </html
