@@ -26,7 +26,6 @@ var formSubmitHandler = function(event) {
     var artistInput = artistEl.value;
     var songInput = songEl.value;
 
-    // keeps getting an invalid search alert
     if (artistInput || songInput) {
         getYoutubeVideos(artistInput, songInput);
         artistEl.value = "";
@@ -53,6 +52,7 @@ var displayYtVideos = function (vidList, searchTerm) {
             playerFrameEl.setAttribute("height", "360");
             playerFrameEl.setAttribute("width", "480");
             playerFrameEl.setAttribute("frameborder", "0");
+            playerFrameEl.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
 
      // add to videoContainers div
      videoContainerEl.appendChild(playerFrameEl); 
