@@ -1,3 +1,4 @@
+  
 const songInput = document.getElementById("song-input")
 const artistInput = document.getElementById("artist-input")
 const lyricsDisplay = document.getElementById("lyrics")
@@ -32,6 +33,8 @@ var formSubmitHandler = function (event) {
     }
     
 };
+
+
 
 
 submitSearch.addEventListener('click', formSubmitHandler);

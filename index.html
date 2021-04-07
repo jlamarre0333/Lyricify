@@ -5,21 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyrify - Home Page</title>
-    <link href="./assets/css/style.css" type="stylesheet">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <title>Lyrify</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>Lyrify</header>
+    
+        <nav class="top-bar topbar-responsive">
+            <div class="top-bar-title">
+              <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+              </span>
+              <a class="topbar-responsive-logo" href="#"><h1>Lyrify</h1></a>
+            </div>
+            <div id="topbar-responsive" class="topbar-responsive-links">
+              <div class="top-bar-right">
+                <ul class="menu simple vertical medium-horizontal">
+                  <li>
+                    <button id= "favLyricsBtn" type="button" class="button hollow topbar-responsive-button" > <a href="./favoriteLyrics.html">
+                        &#9734; Favorite Lyrics
+                    </a></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- <h1>Lyrify</h1>
+        <button type="button" id="favorite-lyricsBtn">
+            <a href="./favoriteLyrics.html">
+                Favorite Lyrics
+            </a>
+        </button> -->
+    
+
+    
+      
+      
 
     <main>
         <p>Search Video</p>
 
         <input id="artist-input" type="text" class="form-control" placeholder="Enter Artist" aria-label="Enter Artist">
         <input id="song-input" type="text" class="form-control" placeholder="Enter Song" aria-label="Enter Song">
-        <button id="search-button" type="button">Search</button>
+        <button class="button" id="search-button">
+            Search
+        </button>
+
+
     </main>
 
+    <div>
+        <p id="lyrics">
+
+        </p>
+
+    </div>
+    
     <div id = "videosContainer"></div>
 
     <div id = "lyricsContainer">
