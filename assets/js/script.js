@@ -35,3 +35,7 @@ var formSubmitHandler = function (event) {
 
 
 submitSearch.addEventListener('click', formSubmitHandler);
+<<<<<<< HEAD
+=======
+
+>>>>>>> ac37a65a544ef3ef986618bf9126df0823c34af4
