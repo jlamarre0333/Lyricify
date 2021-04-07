@@ -8,7 +8,7 @@ var getYoutubeVideos = function (artist, song) {
     var addSearch = search.split(" ").join("+");
 
     // grabbing user searches
-    var apiURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + addSearch + "&order=viewCount&key=AIzaSyDLnpjvEUdZssvPFecwf4f88nTwEGH6eCM";
+    var apiURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + addSearch + "&order=viewCount&key=AIzaSyD2qBXYddXp5C3zOfxsc2aj-EkeN3oXcuE";
     // apiurl sample
     // https://www.googleapis.com/youtube/v3/search?part=snippet&q=john+legend+all+of+me&order=viewCount&key=AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw
 
