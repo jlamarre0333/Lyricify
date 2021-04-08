@@ -1,0 +1,52 @@
+:root{
+    --primary-color: #dbe2ef;
+    --secundary-color: #112d4e;
+    --tertiary-color: #3f72af;
+}
+
+
+header {
+    padding: .25px .25px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    font-weight: bold;
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: var(--secundary-color);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secundary-color)
+}
+
+main p {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.lyricsDisplay {
+    align-items: center;
+}
+
+.search-button{
+    color: var(--secundary-color);
+}
+
+.button{
+    color: var(--secundary-color);
+}
+
+body {
+    background-color: var(--tertiary-color);
+}
