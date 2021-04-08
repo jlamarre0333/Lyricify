@@ -33,6 +33,7 @@ var formSubmitHandler = function (event) {
     
 };
 
-submitSearch.addEventListener('click', formSubmitHandler)
 
+
+submitSearch.addEventListener('click', formSubmitHandler);
 
