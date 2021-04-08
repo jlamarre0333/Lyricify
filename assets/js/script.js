@@ -8,7 +8,17 @@ function getLyrics(artist, songname) {
         .then(res => res.json())
         .then(data => data.lyrics)
         .then(lyrics => {
-            lyricsDisplay.textContent = lyrics;
+            const lyricArray = lyrics.split("\n").filter(item => item !== "")
+            const lyricItems = document.createElement("ul")
+
+            lyricArray.forEach(line => {
+                const lyricItem = document.createElement("li")
+                lyricItem.textContent = line
+                lyricItems.appendChild(lyricItem)
+                
+            });
+            lyricsDisplay.appendChild(lyricItems)
+
         })
 }
 
