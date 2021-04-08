@@ -18,9 +18,7 @@ var getYoutubeVideos = function (artist, song) {
         .then(function (data) {
             displayYtVideos(data);
         })
-        .catch(function(err) {
-            displayYtVideos();
-        });
+        
     });
 };
 
