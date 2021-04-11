@@ -53,7 +53,7 @@ var displayYtVideos = function (vidList) {
     // var vidLinkEmb = "https://www.youtube.com/embed/f-wMpSz1oa4";
     var vidLinkEmb = "https://www.youtube.com/embed/" + vidList.items[0].id.videoId;
 
-    // creating iframe element
+    // add to  iframe element
     var playerFrameEl = document.getElementById("videoIframe");
 
     // customizing attributes to iframe
@@ -64,7 +64,7 @@ var displayYtVideos = function (vidList) {
     playerFrameEl.setAttribute("frameborder", "0");
     playerFrameEl.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
 
-    // add to videoContainers
+    
 }
 
 buttonEl.addEventListener("click", formSubmitHandler);
