@@ -55,4 +55,8 @@ var displayfavlyrics = function ()
             })
           }, false);
         }
+<<<<<<< HEAD
     };
+=======
+    };
+>>>>>>> b0de3f06051558acd240a0c3f1edbd9624bdb31b
