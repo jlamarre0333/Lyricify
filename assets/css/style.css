@@ -1,5 +1,6 @@
 :root{
     --primary-color: #dbe2ef;
+
     --secundary-color: #112d4e;
     --tertiary-color: #536162;
 }
@@ -7,6 +8,10 @@
 
 header {
     padding: .25px .25px;
+
+
+    background-color: #2c3840;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -15,13 +20,17 @@ header {
     top: 0;
 }
 
-header h1{
-    font-weight: bold;
-    padding: 20px 0;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 36px;
-    /* color: var(--secundary-color); */
+
+header h2 {
+  font-weight: bold;
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: var(--secundary-color);
+}
+
+
 }
 
 header a {
@@ -55,6 +64,12 @@ body {
 nav {
     height: 20%;
 }
+
+=======
+#favLyricsBtn {
+    padding-right: 0;
+}
+
 
 .topbar-responsive {
     background: #2c3840;
@@ -132,5 +147,4 @@ nav {
     }
   }
   
- 
-  
+

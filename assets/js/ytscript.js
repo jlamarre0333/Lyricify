@@ -9,7 +9,9 @@ var getYoutubeVideos = function (artist, song) {
 
     // grabbing user searches
 
+
     var apiURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + addSearch + "&order=viewCount&key=AIzaSyD2qBXYddXp5C3zOfxsc2aj-EkeN3oXcuE";
+
 
     // apiurl sample
     // https://www.googleapis.com/youtube/v3/search?part=snippet&q=john+legend+all+of+me&order=viewCount&key=AIzaSyDfubMGVZns1rWCJ_VTsHqjAoYaa2PKyDw
@@ -17,11 +19,13 @@ var getYoutubeVideos = function (artist, song) {
     // making a request to url
     fetch(apiURL).then(function (response) {
 
+
         response.json()
         .then(function (data) {
             displayYtVideos(data);
         })
        
+
     });
 };
 
@@ -43,11 +47,14 @@ var formSubmitHandler = function (event) {
 };
 
 
+
 var displayYtVideos = function (vidList) {
+
 
 
     // grabbing div named videoContainers
     var videoContainerEl = document.querySelector("#videosContainer");
+
 
 
     // var vidLinkEmb = "https://www.youtube.com/embed/f-wMpSz1oa4";
@@ -55,6 +62,7 @@ var displayYtVideos = function (vidList) {
 
     // add to  iframe element
     var playerFrameEl = document.getElementById("videoIframe");
+
 
     // customizing attributes to iframe
     // shorten this by creating an object array
@@ -64,7 +72,8 @@ var displayYtVideos = function (vidList) {
     playerFrameEl.setAttribute("frameborder", "0");
     playerFrameEl.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
 
+
     
-}
+
 
 buttonEl.addEventListener("click", formSubmitHandler);
