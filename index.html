@@ -5,12 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Lyrify - Home Page</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <title>Lyrify</title>
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+
+
+
+    <nav class="topbar-responsive">
+        <div class="top-bar-title">
+            <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+            </span>
+            <a class="topbar-responsive-logo" href="#">
+                <h1>Lyrify</h1>
+            </a>
+        </div>
+        <div id="topbar-responsive" class="topbar-responsive-links">
+            <div class="top-bar-right">
+                <ul class="menu simple vertical medium-horizontal">
+                    <li>
+                        <a href="./favoriteLyrics.html">
+                            <button id="favLyricsBtn" type="button" class="button hollow topbar-responsive-button">
+                                &#9734; Favorite Lyrics
+                            </button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <h1>Lyrify</h1>
+
     
         <nav class="top-bar topbar-responsive">
             <div class="top-bar-title">
@@ -31,34 +59,25 @@
             </div>
           </nav>
         <!-- <h1>Lyrify</h1>
-        <button type="button" id="favorite-lyricsBtn">
-            <a href="./favoriteLyrics.html">
-                Favorite Lyrics
-            </a>
-        </button> -->
-    
 
-    
-      
-      
 
     <main>
         <p>Search Video</p>
 
         <input id="artist-input" type="text" class="form-control" placeholder="Enter Artist" aria-label="Enter Artist">
         <input id="song-input" type="text" class="form-control" placeholder="Enter Song" aria-label="Enter Song">
-        <button class="button" id="search-button">
-            Search
-        </button>
 
+        <button id="search-button" class="button">Search</button>
 
     </main>
 
-    <div>
-        <p id="lyrics">
 
-        </p>
+    <div id="videosContainer"></div>
 
+    <div id="videosContainer">
+        <iframe id="videoIframe">
+
+        </iframe>
     </div>
     
     <div id = "videosContainer"></div>
@@ -68,9 +87,19 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/ytscript.js"></script>
+
+    <div id="lyrics">
+
+
+        <div id="lyricsContainer">
+            <p id="lyrics"></p>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/ytscript.js"></script>
 </body>
 
 </html>
